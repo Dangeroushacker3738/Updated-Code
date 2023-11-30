@@ -2,13 +2,14 @@ import random
 from flask import jsonify
 import secrets
 from flask import Flask, render_template, flash, redirect, url_for, session, logging, request, session
-from flask_sqlalchemy import SQLAlchemy
+from flask_sqlalchemy import SQLAlchemy 
+import os
 
 ALLOWED_EXTENSIONS = ['png', 'jpg', 'jpeg']
 app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///database.db'
 db = SQLAlchemy(app)
-app.secret_key = "m4xpl0it"
+app.secret_key = "31Hh1;vHVoD74IS"
 
 
 def make_token():
